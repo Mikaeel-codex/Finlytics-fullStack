@@ -1,7 +1,6 @@
 // src/pages/Onboarding/Step3.tsx
 import { useLocation, useNavigate } from "react-router-dom";
 
-type NavState = { fullName?: string; role?: string; email?: string };
 
 export default function Step3() {
   const nav = useNavigate();

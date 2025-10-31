@@ -1,8 +1,6 @@
 // src/pages/Onboarding/Step5.tsx
 import { useLocation, useNavigate } from "react-router-dom";
 
-type NavState = { fullName?: string; role?: string; email?: string };
-
 export default function Step5() {
   const nav = useNavigate();
   const { state } = useLocation();
@@ -78,10 +76,6 @@ function ExportBox({
   title: string;
   desc: string;
 }) {
-  const toneMap: Record<typeof tone, string> = {
-    green: "bg-emerald-700/25",
-    purple: "bg-fuchsia-700/25",
-  };
 
   const icon =
     tone === "green" ? (
