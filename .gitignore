@@ -1,0 +1,13 @@
+# node / vite
+finlytics-frontend/node_modules
+finlytics-frontend/dist
+
+# python venv
+finlytics-backend/venv
+
+# pycache
+__pycache__/
+*.pyc
+
+# env
+.env
