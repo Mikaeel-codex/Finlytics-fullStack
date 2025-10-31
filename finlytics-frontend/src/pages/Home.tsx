@@ -88,10 +88,13 @@ export default function Home() {
 
     try {
       setLoading(true);
-      const res = await fetch("http://127.0.0.1:8000/upload", {
-        method: "POST",
-        body: formData,
-      });
+      const API_BASE =
+      import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+
+      const res = await fetch(`${API_BASE}/upload`, {
+      method: "POST",
+      body: formData,
+    });
 
       if (!res.ok) {
         toast.error("Upload failed");
